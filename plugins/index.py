@@ -198,10 +198,10 @@ async def cb_handler(bot: Client, query: CallbackQuery):
                         id=media.file_id
                         break
                 else:
-                    id=f"{FROM}_{msg.message_id}"
+                    id=f"{FROM}_{msg.id}"
                     file_type="others"
             
-            message_id=msg.message_id
+            message_id=msg.id
             try:
                 aynav, vnay = await save_data(id, channel, message_id, methord, msg_caption, file_type)
                 if aynav:
