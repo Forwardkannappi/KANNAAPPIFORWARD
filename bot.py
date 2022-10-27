@@ -4,7 +4,7 @@ from config import Config
 from config import LOGGER
 
 from user import User
-import pyromod.listen
+from pyromod import listen 
 
 
 class Bot(Client):
@@ -35,4 +35,8 @@ class Bot(Client):
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped. Bye.")
+        self.LOGGER(__name__).info("Bot stopped. Bye.")                 
+
+
+
+
