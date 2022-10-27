@@ -10,6 +10,7 @@ class User(Client):
             name="user",            
             api_hash=Config.API_HASH,
             api_id=Config.API_ID,
+            in_memory=True,
             session_string=Config.SESSION
         )
         self.LOGGER = LOGGER
